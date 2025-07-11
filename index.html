@@ -1,113 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ООО ЭРИГЕР — Остекление и монтаж</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ООО ЭРИГЕР — Услуги по остеклению</title>
   <style>
-    body { font-family: Arial; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background: #003366; color: white; padding: 1em; text-align: center; }
-    nav a { margin: 0 1em; color: #fff; text-decoration: none; }
-    section { padding: 2em; max-width: 900px; margin: auto; }
-    img { max-width: 100%; border-radius: 10px; margin-top: 1em; }
-    footer { background: #003366; color: white; text-align: center; padding: 1em; }
-    form { display: flex; flex-direction: column; gap: 1em; }
-    input, textarea { padding: 0.5em; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; }
-    button { padding: 0.5em; background: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    .slider { position: relative; width: 100%; overflow: hidden; border-radius: 10px; }
-    .slides { display: flex; transition: transform 0.5s ease-in-out; }
-    .slides img { width: 100%; flex-shrink: 0; }
-    @media (max-width: 600px) {
-      nav a { display: block; margin: 0.5em 0; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #ffffff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #007bff;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .service-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    .service-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    .service-card .btn {
+      margin-top: 15px;
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .services-grid {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>ООО ЭРИГЕР</h1>
+    <nav>
+      <a href="#services">Услуги</a>
+      <a href="#about">О нас</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>ООО ЭРИГЕР</h1>
-  <nav>
-    <a href="#about">О нас</a>
-    <a href="#services">Услуги</a>
-    <a href="#gallery">Галерея</a>
-    <a href="#contacts">Контакты</a>
-  </nav>
-</header>
-
-<section id="about">
-  <h2>О компании</h2>
-  <p>ООО «ЭРИГЕР» — профессиональная команда по выполнению монтажных и остеклительных работ. Мы работаем по всей России и гарантируем качество и надёжность.</p>
-</section>
-
-<section id="services">
-  <h2>Наши услуги</h2>
-  <ul>
-    <li>Монтаж алюминиевых конструкций</li>
-    <li>Остекление балконов и фасадов</li>
-    <li>Панорамное остекление</li>
-    <li>Сервисное обслуживание</li>
-  </ul>
-</section>
-
-<section id="gallery">
-  <h2>Примеры работ</h2>
-  <div class="slider">
-    <div class="slides" id="slides">
-      <img src="images/glass1.jpg" alt="Остекление фасадов">
-      <img src="images/glass2.jpg" alt="Монтажные работы">
+  <section id="services">
+    <h2 style="text-align:center;">Наши услуги</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="images/montazh.png" alt="Монтаж">
+        <h3>Монтаж фасадов</h3>
+        <p>Установка алюминиевых фасадов и витражей любых типов и размеров.</p>
+        <a href="#contact" class="btn">Заказать</a>
+      </div>
+      <div class="service-card">
+        <img src="images/steklopakety.png" alt="Стеклопакеты">
+        <h3>Установка стеклопакетов</h3>
+        <p>Поставка и монтаж однокамерных и двухкамерных стеклопакетов.</p>
+        <a href="#contact" class="btn">Заказать</a>
+      </div>
+      <div class="service-card">
+        <img src="images/zim_sady.png" alt="Зимние сады">
+        <h3>Зимние сады</h3>
+        <p>Остекление зимних садов под ключ с гарантией герметичности.</p>
+        <a href="#contact" class="btn">Заказать</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contacts">
-  <h2>Контакты</h2>
-  <p>📞 +7 (999) 123-45-67<br>📧 info.eriger@bk.ru<br>📍 Москва, ул. Примерная, д. 1</p>
-
-  <h3>Обратная связь</h3>
-  <form id="tg-form">
-    <input type="text" id="name" placeholder="Ваше имя" required>
-    <input type="tel" id="phone" placeholder="Телефон" required>
-    <textarea id="message" rows="4" placeholder="Сообщение"></textarea>
-    <button type="submit">Отправить</button>
-    <p id="status"></p>
-  </form>
-
-  <h3>Мы на карте</h3>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.2800195435075!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjgiTiAzN8KwMzcnMDIuMiJF!5e0!3m2!1sru!2sru!4v1617550253516!5m2!1sru!2sru"
-    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-  </iframe>
-</section>
-
-<footer>
-  <p>© ООО ЭРИГЕР, 2025</p>
-</footer>
-
-<script>
-  document.getElementById("tg-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
-
-    const text = `📝 Новая заявка:\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n💬 Сообщение: ${message}`;
-    const token = "7216573580:AAHWbeT_GTgYMY_JMExVvsSHIOMIkQIUBiM";
-    const chat_id = "415648247";
-
-    fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: "POST",
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id, text })
-    })
-    .then(() => {
-      document.getElementById("status").textContent = "✅ Сообщение отправлено!";
-      document.getElementById("tg-form").reset();
-    })
-    .catch(() => {
-      document.getElementById("status").textContent = "❌ Ошибка отправки.";
-    });
-  });
-</script>
-
+  <section id="contact" style="text-align:center;">
+    <h2>Связаться с нами</h2>
+    <p>Напишите нам через форму или в Telegram:</p>
+    <a href="https://t.me/ErigerBot" class="btn">Telegram</a>
+  </section>
 </body>
 </html>
